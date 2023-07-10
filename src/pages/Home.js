@@ -6,7 +6,7 @@ function Home() {
   const [listOfPosts, setListOfPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("https://full-stack-api-test-4994e2f6084a.herokuapp.com/post").then((response) => {
+    axios.get("https://full-stack-api-test-4994e2f6084a.herokuapp.com/posts").then((response) => {
       setListOfPosts(response.data);
     });
   }, []);
