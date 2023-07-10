@@ -17,7 +17,7 @@ function CreatePost() {
   });
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:3001/posts", data).then((response) => {
+    axios.post("https://full-stack-api-test-4994e2f6084a.herokuapp.com/posts", data).then((response) => {
       console.log("IT WORKED");
     });
   };
